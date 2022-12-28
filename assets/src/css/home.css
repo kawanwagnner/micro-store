@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+
+/* Global ---------------------------------------------------------------------- */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho // Navegação ---------------------------------------------------------------------- */
+
+#cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(30deg, );
+}
+
+#logo {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    margin: 40px 0px 20px 40px;
+}
+
+#navbar {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+}
+
+#list-navbar {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    list-style: none;
+    color: #fff;
+}
+
+#list-navbar li {
+    padding: 10px;
+    font-weight: bold;
+}
+
+#list-navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+/* Body Page ---------------------------------------------------------------------- */
+
+body {
+    overflow-x: hidden;
+}
+
+#conteudo-view-n1 {
+    width: 100vw;
+    height: 100vh;
+    background: #fff url(../image/1.png) no-repeat center center;
+    background-size: cover;
+    margin-top: -13.8%;
+}
+
+#container-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto 0% auto;
+    max-width: 600px;
+    color: #fff;
+}
+
+#container-welcome h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container-txt {
+    margin-top: 20%;
+}
+
+.container-txt h1 {
+    margin: 20px;
+}
+
+#btn-produtos {
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 7%;
+    margin-left: 42%;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*  Animation Of Page. ---------------------------------------------------------------------- */
+
+#seta > div {
+    animation: move 3.5s infinite ease-in-out;
+    box-shadow: 2px -2px 0 1px #fff inset;
+    border: 1px solid #fff;
+    padding: 16px;
+    border-radius: 5%;
+    border-width: 0 0 0px 0px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+}
+
+@keyframes move {
+    0% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: 50px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+/* Produtos ..view N° 2 ---------------------------------------------------------------------- */
+
+#conteudo-view-n2 {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 25% auto;
+    display: flex;
+    align-items: center;
+}
+
+.produto {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    margin: -20% 10px;
+    background-color: #294a91;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.produto img {
+    margin: 0% 12%;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.spans {
+    display: block;
+    margin: 10% 0% 0% 30%;
+    color: #fff;
+    font-weight: bolder;
+}
