@@ -9,3 +9,7 @@ sr.reveal('#logo', { duration: 2000 });
 sr.reveal('#navbar', { duration: 2000 });
 
 sr.reveal('#btn-produtos', { duration: 2000 });
+
+sr.reveal('.produto', { duration: 1000 });
+
+sr.reveal('.produto-2', { duration: 2000 });
