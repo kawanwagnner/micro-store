@@ -1,3 +1,22 @@
+/* Menu NavBar. ---------------------------------------------------------------------- */
+
+const btn = document.querySelector('#btn-menu'); 
+
+btn.addEventListener('click', () => {
+    const navbar = document.querySelector('#navbar'); 
+
+    navbar.classList.toggle('active'); 
+    if (btn.innerHTML == 'X') {
+        btn.innerHTML = '<i class="fa-solid fa-bars"></i>'; 
+        document.body.style.overflow = 'auto'
+    } else {
+        btn.innerHTML = 'X'; 
+        document.body.style.overflow = 'hidden'
+    }
+})
+
+/* Scroll Reveal. ---------------------------------------------------------------------- */
+
 window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.container-txt', { 
@@ -6,7 +25,7 @@ sr.reveal('.container-txt', {
 
 sr.reveal('#logo', { duration: 2000 });
 
-sr.reveal('#navbar', { duration: 2000 });
+sr.reveal('#rodape', { duration: 2000 });
 
 sr.reveal('#btn-produtos', { duration: 2000 });
 
