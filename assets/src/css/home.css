@@ -144,7 +144,6 @@ body {
     width: 100%;
     height: 100%;
     margin: 20% auto 10% auto;
-
 }
 
 #prateleira-n1 {
@@ -338,7 +337,7 @@ a .buy:hover {
         position: absolute;
         width: 0%;
         right: 15%;
-        top: 5%;
+        top: 20px;
         border: none;
         background: none;
         color: #fff;
@@ -379,7 +378,15 @@ a .buy:hover {
     }
 
     #seta>div {
-        top: 70%;
+        top: 400px;
+    }
+
+    #conteudo-view-n2 {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        margin: 40% auto 10% auto;
+    
     }
 
 }
@@ -395,7 +402,7 @@ a .buy:hover {
     }
 
     #seta>div {
-        top: 350px;
+        top: 400px;
         
     }
 
@@ -405,7 +412,7 @@ a .buy:hover {
         }
     
         50% {
-            margin-top: 20px;
+            margin-top: 50px;
         }
     
         200% {
@@ -414,7 +421,7 @@ a .buy:hover {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     #logo {
         font-size: 30px;
     }
@@ -424,5 +431,9 @@ a .buy:hover {
         margin: auto 5%;
     }
 
-    
+    #seta>div {
+        top: 370px;
+        
+    }
+
 }
