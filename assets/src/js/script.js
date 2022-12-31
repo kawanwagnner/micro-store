@@ -35,8 +35,43 @@ sr.reveal('.produto-2', { duration: 2000 });
 
 /* Avisos -------------------------------------------------------------------------------  */
 
-const btnBuy = document.querySelector('.buy')
-btnBuy.addEventListener('click', () => {
+const btnBuy = document.querySelectorAll('.buy')
+btnBuy[0].addEventListener('click', () => {
+    
+    alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
+
+btnBuy[1].addEventListener('click', () => {
+    
+    alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
+
+btnBuy[2].addEventListener('click', () => {
+    
+    alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
+
+btnBuy[3].addEventListener('click', () => {
+    
+    alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
+
+btnBuy[4].addEventListener('click', () => {
+    
+    alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
+
+btnBuy[5].addEventListener('click', () => {
+    
+    alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
+
+btnBuy[6].addEventListener('click', () => {
+    
+    alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
+
+btnBuy[7].addEventListener('click', () => {
     
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
 })
