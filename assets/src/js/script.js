@@ -32,3 +32,11 @@ sr.reveal('#btn-produtos', { duration: 2000 });
 sr.reveal('.produto', { duration: 1000 });
 
 sr.reveal('.produto-2', { duration: 2000 });
+
+/* Avisos -------------------------------------------------------------------------------  */
+
+const btnBuy = document.querySelector('.buy')
+btnBuy.addEventListener('click', () => {
+    
+    alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
