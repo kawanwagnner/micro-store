@@ -22,3 +22,20 @@ SignOut.addEventListener('click', () => {
     location.href = 'index.html'
     localStorage.clear()
 })
+
+/* Menu NavBar. ---------------------------------------------------------------------- */
+
+const btnMenu = document.querySelector('#btn-menu'); 
+
+btnMenu.addEventListener('click', () => {
+    const navbar = document.querySelector('#navbar'); 
+
+    navbar.classList.toggle('active'); 
+    if (btnMenu.innerHTML == 'X') {
+        btnMenu.innerHTML = '<i class="fa-solid fa-bars"></i>'; 
+        document.body.style.overflow = 'auto'
+    } else {
+        btnMenu.innerHTML = 'X'; 
+        document.body.style.overflow = 'hidden'
+    }
+})
