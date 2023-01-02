@@ -5,6 +5,7 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -44,7 +45,8 @@
 }
 
 #list-navbar li:hover {
-    background-color: #0026ff;border-radius: 20px;
+    background-color: #0026ff;
+    border-radius: 20px;
     padding: 10px;
     transition: .5s;
 }
@@ -62,9 +64,10 @@
     margin-right: 80px;
     margin-top: 20px;
     border-radius: 100%;
-    border: 1px solid #fff ;
+    border: 1px solid #fff;
     padding: -60px;
-    background-color: #000000
+    background-color: #000000;
+    cursor: pointer;
 }
 
 #href-perfil:hover {
@@ -76,7 +79,7 @@
 body {
     width: 100vw;
     height: 90vh;
-    background: linear-gradient(to top,#0026ff, #010107 );
+    background: linear-gradient(to top, #0026ff, #010107);
     overflow-x: hidden;
 }
 
@@ -104,6 +107,65 @@ body {
 
 .container-txt h1 {
     margin: 20px auto;
+}
+
+.container-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000b7;
+    z-index: 3;
+}
+
+.popup {
+    position: relative;
+    margin: 15% auto;
+    background: url(../image/1.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 0 10px #ebe7e7dc;
+    width: 400px;
+    height: 400px;
+}
+
+.popup h1 {
+    padding: 30px;
+    padding-top: 25%;
+    font-weight: bolder;
+
+}
+
+.popup span {
+    margin: 20px auto 0px 25%;
+    display: block;
+}
+
+.popup button {
+    border: none;
+    background: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 35px;
+    font-style: italic;
+    padding: 20px;
+}
+
+.popup button:hover {
+    text-decoration: underline;
+}
+
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 30px;
+
 }
 
 #btn-produtos {
@@ -178,7 +240,7 @@ body {
     height: 100%;
     padding: 10px;
     margin: 5% 2%;
-    background: linear-gradient(to top,#0026ff, #010107 );
+    background: linear-gradient(to top, #0026ff, #010107);
     border-radius: 20px;
     box-shadow: 0 0 10px #000000ab;
 }
@@ -206,7 +268,7 @@ body {
     height: 100%;
     padding: 10px;
     margin: 0% 2% 5% 2%;
-    background: linear-gradient(to top,#0026ff, #010107 );
+    background: linear-gradient(to top, #0026ff, #010107);
     border-radius: 20px;
     box-shadow: 0 0 10px #000000ab;
 }
@@ -300,7 +362,7 @@ a .buy:hover {
     body {
         width: 100vw;
         height: 100vh;
-        background: linear-gradient(to top,#0026ff, #010107 );
+        background: linear-gradient(to top, #0026ff, #010107);
     }
 
     #prateleira-n1 {
@@ -313,12 +375,12 @@ a .buy:hover {
 
     .produto {
         margin: 5% 2%;
-        background: linear-gradient(to bottom,#0026ff, #010107 );
+        background: linear-gradient(to bottom, #0026ff, #010107);
     }
 
     .produto-2 {
         margin: 4% 2%;
-        background: linear-gradient(to bottom,#0026ff, #010107 );
+        background: linear-gradient(to bottom, #0026ff, #010107);
     }
 
     .produto img,
@@ -386,7 +448,8 @@ a .buy:hover {
     }
 
     #list-navbar li:hover {
-        background-color: #0026ff;border-radius: 20px;
+        background-color: #0026ff;
+        border-radius: 20px;
         padding: 10px;
         transition: .5s;
     }
@@ -407,7 +470,7 @@ a .buy:hover {
         width: 100%;
         height: 100%;
         margin: 40% auto 10% auto;
-    
+
     }
 
 }
@@ -424,18 +487,22 @@ a .buy:hover {
 
     #seta>div {
         top: 400px;
-        
+
+    }
+
+    #href-perfil {
+        right: 2%;
     }
 
     @keyframes move {
         0% {
             margin-top: 0;
         }
-    
+
         50% {
             margin-top: 50px;
         }
-    
+
         200% {
             margin-top: 0px;
         }
@@ -454,7 +521,29 @@ a .buy:hover {
 
     #seta>div {
         top: 370px;
-        
+
     }
+
+    .popup {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .popup h1 {
+        padding: 30px;
+        padding-top: 25%;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    
+    .popup span {
+        margin: 20px auto 0px 25%;
+        display: block;
+    }
+    
+    .popup button {
+        font-size: 25px;
+    }
+    
 
 }

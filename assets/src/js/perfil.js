@@ -17,7 +17,7 @@ localSenha.innerHTML = password;
 
 /* Sign Out ---------------------------------------------------------------------- */
 
-const SignOut = document.querySelector('.sign-out')
+const SignOut = document.querySelector('#sign-out')
 SignOut.addEventListener('click', () => {
     location.href = 'index.html'
     localStorage.clear()

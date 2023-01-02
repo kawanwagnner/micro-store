@@ -14,7 +14,7 @@
 
 <body>
     <header id="cabeçalho">
-        <h1 id="logo">Kawx_Z</h1>
+        <h1 id="logo"><a href="index.html">Kawx_Z</a></h1>
         <nav id="navbar">
             <ul id="list-navbar">
                 <li><a href="https://www.instagram.com/kawan_wg.k/" target="_blank">Instagram</a></li>
@@ -31,27 +31,29 @@
 
         <div id="first-name">
             <h2 class="identificador-input">Nome:</h2>
-            <input type="text" id="box-firstname" pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
+            <input type="text" id="box-firstname" pattern="[A-Za-z]*"
                 placeholder="Digite seu Nome:">
         </div>
 
 
         <div id="last-name">
             <h2 class="identificador-input">Sobrenome:</h2>
-            <input type="text" id="box-lastname" pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
+            <input type="text" id="box-lastname" pattern="[A-Za-z]*"
                 placeholder="Digite seu Sobrenome:">
         </div>
 
         <div id="email">
             <h2 class="identificador-input">Email:</h2>
             <input type="text" id="box-email"
-                pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ0123456789@.]*"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$*"
+                minlength="10"
                 placeholder="Digite seu E-Mail:">
         </div>
 
         <div id="password">
             <h2 class="identificador-input">Senha:</h2>
-            <input type="password" id="box-password" placeholder="Digite sua senha:">
+            <input type="password" id="box-password" 
+            placeholder="Digite sua senha:">
         </div>
 
         <input id="send-informations" type="button" value="Enviar☑️">
@@ -67,6 +69,5 @@
         <h4 class="by">Por: <a id="whatsapp" href="https://github.com/kawanwagnner">Kawan Wagnner</a></h4>
     </footer>
 </body>
-<script src="assets/src/js/cadastro.js"></script>
-
+<script src="assets/src/js/cadastro.js" defer></script>
 </html>
