@@ -20,7 +20,7 @@ btn.addEventListener('click', () => {
         alert('Nome deve conter um mínimo de 3 Caracteres.')
     } else if (LocalLastName.length == '' || LocalLastName.length < 3) {
         alert('Sobrenome deve conter um mínimo de 3 Caracteres.')
-    } else if (LocalEmail.length == '') {
+    } else if (LocalEmail.length == '' || LocalEmail < 10) {
         alert('Digite um E-mail válido!.')
     } else if (LocalPassword.length < 8) {
         alert('Senha deve conter um mínimo de 8 dígitos.')
