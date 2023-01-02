@@ -145,6 +145,10 @@ body {
     display: block;
 }
 
+.yes, .no {
+    cursor: pointer;
+}
+
 .popup button {
     border: none;
     background: none;
