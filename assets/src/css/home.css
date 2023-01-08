@@ -293,7 +293,8 @@ body {
     width: 200px;
     height: 200px;
     margin: 20px;
-    transition: .5s;
+    transition: all .5s ease;
+    cursor: pointer;
 }
 
 .produto img,
@@ -440,7 +441,8 @@ a .buy:hover {
         width: 250px;
         height: 250px;
         margin: 20px auto;
-        transition: .5s;
+        transition: all .5s ease;
+        cursor: pointer;
     }
 
     .produto-2 img:hover {
