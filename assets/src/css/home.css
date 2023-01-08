@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+/*Opens Sans*/
+
+/* Icons Bootstrap ---------------------------------------------------------------------- */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
 
 /* Global ---------------------------------------------------------------------- */
 
@@ -8,6 +14,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Cabeçalho // Navegação ---------------------------------------------------------------------- */
@@ -74,13 +84,34 @@
     background-color: #30303080;
 }
 
-/* Body Page ---------------------------------------------------------------------- */
+/* Body Page; ---------------------------------------------------------------------- */
 
 body {
     width: 100vw;
     height: 90vh;
     background: linear-gradient(to top, #0026ff, #010107);
     overflow-x: hidden;
+}
+
+.bi-up {
+    background-color: #000000;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+    display: block;
+    z-index: 20;
+    
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 0.5%;
+}
+
+.bi-up:hover {
+    box-shadow: 0 0 10px #fff;
 }
 
 #container-welcome {
@@ -145,7 +176,8 @@ body {
     display: block;
 }
 
-.yes, .no {
+.yes,
+.no {
     cursor: pointer;
 }
 
@@ -232,6 +264,14 @@ body {
     height: 100%;
 }
 
+#prateleira::before {
+    content: 'legal';
+    color: #000000;
+    font-size: 30px;
+    width: 100%;
+    height: 5%;
+}
+
 #prateleira-n2 {
     display: flex;
     align-items: center;
@@ -285,12 +325,14 @@ body {
 }
 
 .spans {
-    display: block;
-    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 10% 0% 0% 0%;
+    display: block;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
     color: #fff;
-    font-weight: bolder;
 }
 
 a {
@@ -315,7 +357,7 @@ a .buy:hover {
     padding: 10px;
     border-radius: 30px;
     width: 100%;
-    transition: .5s;
+    transition: all .5s ease;
 }
 
 #btn-menu {
@@ -413,6 +455,7 @@ a .buy:hover {
 @media screen and (max-width: 750px) {
     #btn-menu {
         display: block;
+        transition: all .3s ease;
         position: absolute;
         cursor: pointer;
         width: 0%;
@@ -426,14 +469,22 @@ a .buy:hover {
     }
 
     #navbar {
+        transform: translateX(-300%);
+        display: none;
+    }
+
+    #navbar.none {
+        transform: translateX(-300%);
         display: none;
     }
 
     #navbar.active {
         display: block;
+        transform: translateX(-40%);
+        animation: menuInside .5s ease;
         background-color: #000000;
         padding: 10px;
-        width: 100%;
+        width: 100vw;
         height: 120vh;
         position: absolute;
         z-index: 1;
@@ -444,7 +495,7 @@ a .buy:hover {
     #list-navbar {
         display: block;
         text-align: center;
-        margin: 25% auto;
+        margin: 25% 40%;
     }
 
     #list-navbar li {
@@ -453,6 +504,7 @@ a .buy:hover {
 
     #list-navbar li:hover {
         background-color: #0026ff;
+        width: 350%;
         border-radius: 20px;
         padding: 10px;
         transition: .5s;
@@ -475,6 +527,16 @@ a .buy:hover {
         height: 100%;
         margin: 40% auto 10% auto;
 
+    }
+
+    @keyframes menuInside {
+        from {
+            transform: translateX(-300%);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
     }
 
 }
@@ -532,22 +594,22 @@ a .buy:hover {
         width: 300px;
         height: 300px;
     }
-    
+
     .popup h1 {
         padding: 30px;
         padding-top: 25%;
         font-weight: bolder;
         font-size: 25px;
     }
-    
+
     .popup span {
         margin: 20px auto 0px 25%;
         display: block;
     }
-    
+
     .popup button {
         font-size: 25px;
     }
-    
+
 
 }

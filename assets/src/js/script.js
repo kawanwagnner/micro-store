@@ -1,18 +1,27 @@
 /* Menu NavBar. ---------------------------------------------------------------------- */
 
-const btn = document.querySelector('#btn-menu'); 
+const btn = document.querySelector('#btn-menu');
 
 btn.addEventListener('click', () => {
-    const navbar = document.querySelector('#navbar'); 
+    const navbar = document.querySelector('#navbar');
+    const linksNavBar = document.querySelector('#list-navbar a[href^="#"]');
 
-    navbar.classList.toggle('active'); 
+    navbar.classList.toggle('active');
     if (btn.innerHTML == 'X') {
-        btn.innerHTML = '<i class="fa-solid fa-bars"></i>'; 
-        document.body.style.overflow = 'auto'
+        btn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        document.body.style.overflowX = 'auto';
     } else {
-        btn.innerHTML = 'X'; 
-        document.body.style.overflow = 'hidden'
+        btn.innerHTML = 'X';
+        document.body.style.overflow = 'hidden';
     }
+
+    linksNavBar.addEventListener('click', () => {
+        const navbarActive = document.querySelector('#navbar.active')
+        navbarActive.classList.remove('active')
+        document.body.style.overflow = 'auto'
+        document.body.style.overflowX = 'hidden'
+        btn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+    })
 })
 
 /* Referência Perfil with Pop-UP. ---------------------------------------------------------------------- */
@@ -20,7 +29,7 @@ btn.addEventListener('click', () => {
 const hrefPerfil = document.querySelector('#href-perfil')
 hrefPerfil.addEventListener("click", () => {
     const containerPopUp = document.querySelector('.container-popup')
-    
+
     containerPopUp.style.display = 'block'
 })
 
@@ -52,8 +61,8 @@ closepopUpNo.addEventListener('click', () => {
 
 window.sr = ScrollReveal({ reset: true });
 
-sr.reveal('.container-txt', { 
-    rotate: {x: 1000, y: 20, z: 0}, duration: 2000 
+sr.reveal('.container-txt', {
+    rotate: { x: 1000, y: 20, z: 0 }, duration: 2000
 })
 
 sr.reveal('#logo', { duration: 2000 });
@@ -70,41 +79,53 @@ sr.reveal('.produto-2', { duration: 2000 });
 
 const btnBuy = document.querySelectorAll('.buy')
 btnBuy[0].addEventListener('click', () => {
-    
+
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
 })
 
 btnBuy[1].addEventListener('click', () => {
-    
+
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
 })
 
 btnBuy[2].addEventListener('click', () => {
-    
+
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
 })
 
 btnBuy[3].addEventListener('click', () => {
-    
+
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
 })
 
 btnBuy[4].addEventListener('click', () => {
-    
+
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
 })
 
 btnBuy[5].addEventListener('click', () => {
-    
+
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
 })
 
 btnBuy[6].addEventListener('click', () => {
-    
+
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
 })
 
 btnBuy[7].addEventListener('click', () => {
-    
+
     alert('Será gerado um código na mensagem a ser enviada, onde conseguirei distingir os produtos. Por gentileza não apagar. 😊')
+})
+
+/* Favorite Itens -------------------------------------------------------------------------------  */
+
+const btnFavorite = document.querySelector(".save-item")
+btnFavorite.addEventListener("click", () => {
+    const getProduct = document.querySelector(".produto")
+    const containerProduct = document.querySelector(".container-n1")
+
+    const newProduct = document.createElement(getProduct)
+    newProduct.appendChild(containerProduct)
+
 })
