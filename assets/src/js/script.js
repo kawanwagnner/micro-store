@@ -12,7 +12,7 @@ btn.addEventListener('click', () => {
         document.body.style.overflowX = 'auto';
     } else {
         btn.innerHTML = 'X';
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflowX = 'hidden';
     }
 
     linksNavBar.addEventListener('click', () => {
